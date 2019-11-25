@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Wingram</string>
+    <string name="icon_wing">icon wing</string>
+    <string name="text_icon">WINGRAM</string>
+    <string name="slogan">More than just a social network</string>
+    <string name="signup_button">Sign up with Email</string>
 </resources>
