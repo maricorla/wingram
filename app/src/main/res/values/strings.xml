@@ -4,4 +4,8 @@
     <string name="text_icon">WINGRAM</string>
     <string name="slogan">More than just a social network</string>
     <string name="signup_button">Sign up with Email</string>
+    <string name="facebook_button">Continue with Facebook</string>
+    <string name="google_button">Continue with Google</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="signin_button">Sign in now</string>
 </resources>

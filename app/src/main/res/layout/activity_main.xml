@@ -45,31 +45,72 @@
 
     <Button
         android:id="@+id/signup_button"
-        android:layout_width="285dp"
+        android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_green_dark"
         android:text="@string/signup_button"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/facebook_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="285dp"
+        android:id="@+id/facebook_button"
+        android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:background="#5F71B6"
+        android:text="@string/facebook_button"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/google_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="285dp"
+        android:id="@+id/google_button"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="32dp"
-        android:text="Button"
+        android:layout_marginBottom="124dp"
+        android:background="#E64A19"
+        android:text="@string/google_button"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/have_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/have_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="71dp"
+        android:layout_height="25dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="@string/signin_button"
+        android:textColor="#8BE939"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/have_acc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/have_acc" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="have_acc"
+        tools:layout_editor_absoluteX="411dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
